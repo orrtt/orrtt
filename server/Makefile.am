@@ -7,5 +7,5 @@ orrtt_server_SOURCES=orrtt.cpp\
 					 directory_server.cpp
 
 orrtt_server_CPPFLAGS=$(BOOST_CPPFLAGS) -I$(srcdir)/../orrtt
-orrtt_server_LDADD=$(BOOST_ASIO_LIBS) ../orrtt/liborrtt.la
+orrtt_server_LDADD=$(BOOST_ASIO_LIBS) $(BOOST_SYSTEM_LIBS) ../orrtt/liborrtt.la
 
